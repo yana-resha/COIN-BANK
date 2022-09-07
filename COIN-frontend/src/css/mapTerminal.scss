@@ -1,0 +1,14 @@
+@import './index.scss';
+
+
+.map {
+  &__title {
+    @include mainTitle();
+    margin-bottom: 50px;
+  }
+}
+
+.container-map {
+  width: 100%;
+  height: calc(100vh - 00px);
+}

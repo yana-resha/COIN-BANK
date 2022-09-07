@@ -1,0 +1,46 @@
+
+@import './index.scss';
+
+.enter-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+  padding-right: 85px;
+  background-color: $background-color-grey;
+  border-radius: 50px;
+  &__title {
+    @include clearTitleStyle();
+    @include mainTitle();
+    margin-bottom: 35px;
+  };
+  &__form {
+    display: flex;
+    flex-direction: column;
+  };
+  &__input {
+    width: 300px;
+    @include inputStyle();
+  }
+  &__label {
+    @include label();
+    margin-bottom: 25px;
+  }
+  &__error-container {
+    max-width: 100%;
+    font-size: 12px;
+    margin-left: 75px;
+    margin-top: 5px;
+    color: $error-color;
+  }
+  &__btn {
+    align-self: flex-start;
+    margin-left: 75px;
+    @include btnSubmit();
+    @include btnStyle();
+  }
+}
+
+
